@@ -5,12 +5,14 @@ metadata:
   labels:
     name: redis-deploy
     app: demo-voting-app
+
 spec:
   replicas: 1
   selector:
     matchLabels:
       name: redis-pod
       app: demo-voting-app
+
   template:
     metadata:
       name: redis-pod
